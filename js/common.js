@@ -159,7 +159,7 @@ head.ready(function() {
             var seconds = Math.floor((distance % _minute) / _second);
             if (seconds < 10) seconds = '0' + seconds;
 
-            $(".count_line .d").html(days);
+            //$(".count_line .d").html(days);
             $(".count_line .h").html(hours);
             $(".count_line .m").html(minutes);
             $(".count_line .s").html(seconds);

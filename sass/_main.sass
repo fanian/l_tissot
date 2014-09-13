@@ -121,7 +121,7 @@ header
       span
         font-family: 'bebas_neuebold'
   .logo
-    display: tablme
+    display: table
     margin: 20px auto 0
     background: url(../img/logo.png) center center no-repeat
     width: 220px
@@ -254,19 +254,20 @@ header
 
 
 .specs
-  height: 700px
   padding-top: 40px
-
+  padding-bottom: 80px
+  +clr
   +box
   h2
     margin-bottom: 20px
   .specs_in
     @extend %in
-  .specs__items
+    +clr
+  &__items
     float: left
     width: 240px
     margin-top: 20px
-  .specs__item
+  &__item
     display: block
     margin-bottom: 30px
     margin-right: 20px
@@ -283,7 +284,7 @@ header
     h4
       +pfl
       font-size: 18px
-  .specs__watch
+  &__watch
     position: relative
     float: right
     margin-right: 30px
@@ -319,17 +320,49 @@ header
         width: 110px
     .prev
       position: absolute
-      left: 30px
-      bottom: 75px
+      left: -20px
+      top: 165px
       content: ""
       cursor: pointer
+      +s(prev)
     .next
       position: absolute
-      right: 35px
-      bottom: 75px
+      right: -20px
+      top: 165px
       content: ""
       cursor: pointer
+      +s(next)
+  &__small
+    float: left
+    margin-left: 20px
+    clear: both
 
+    ul
+      li
+        float: left
+        margin-right: 45px
+        position: relative
+        &:before
+          position: absolute
+          content: ""
+          top: 2px
+          left: -40px
+
+        &.first
+          &:before
+            +s(specs_ico1)
+            left: -20px
+        &.second
+          &:before
+            +s(specs_ico2)
+            left: -26px
+        &.third
+          &:before
+            +s(specs_ico3)
+            left: -26px
+        &.fourth
+          &:before
+            +s(specs_ico4)
 
 .reviews
   h2
@@ -373,7 +406,7 @@ header
   margin-top: 70px
   .order_in
     @extend %in
-  .order__item
+  &__item
     width: 300px
     +border-radius(8px)
     +background-clip(padding-box)
@@ -386,13 +419,13 @@ header
     +box
     &:last-child
       margin-right: 0
-  .order__caption
+  &__caption
     font-size: 24px
     text-transform: uppercase
     margin-bottom: 45px
-  .order__img
+  &__img
     margin-bottom: 15px
-  .order__price
+  &__price
     h3
       +pfl
       font-size: 18px
@@ -414,7 +447,7 @@ header
         font-size: 18px
         +pfl
 
-  .order__form
+  &__form
     margin-top: 25px
     input
       width: 250px
@@ -480,9 +513,9 @@ header
 
 .bottom
   @extend header
-  .header__title
-    margin-top: 60px
-  .header__title--second
+  padding-top: 20px
+  height: 720px
+  .logo
     margin-top: 0
 
 

@@ -150,7 +150,7 @@ header .header__main--main .header__right:after, .scrollMenu .header__main--main
 .specs__watch .prev { position: absolute; left: -20px; top: 165px; content: ""; cursor: pointer; background: url('../img/icons-s67a093ccc2.png') 0 -230px no-repeat; width: 40px; height: 80px; }
 .specs__watch .next { position: absolute; right: -20px; top: 165px; content: ""; cursor: pointer; background: url('../img/icons-s67a093ccc2.png') 0 -80px no-repeat; width: 40px; height: 80px; }
 .specs__small { float: left; margin-left: 20px; clear: both; }
-.specs__small ul li { float: left; margin-right: 45px; position: relative; }
+.specs__small ul li { float: left; margin-right: 45px; position: relative; width: 70px; }
 .specs__small ul li:before { position: absolute; content: ""; top: 2px; left: -40px; }
 .specs__small ul li.first:before { background: url('../img/icons-s67a093ccc2.png') 0 -375px no-repeat; width: 11px; height: 18px; left: -20px; }
 .specs__small ul li.second:before { background: url('../img/icons-s67a093ccc2.png') 0 -403px no-repeat; width: 18px; height: 18px; left: -26px; }
